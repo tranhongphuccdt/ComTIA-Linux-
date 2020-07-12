@@ -1,0 +1,13 @@
+0: Linux kernel
+Basically, when said that Linux, this statement is not actually correct
+because Linux is just a kernel Linux, upper layer is GNU Applications.
+Definition: kernel is just a core which help application interact with HW layer.
+
+1: Distro
+There are many distros of Linux
+Expert said that:
++ For commercial product server: Redhad
++ For hobby server: CentOS
++ For desktop: Ubuntu or Fedora
+
+Maybe other refers SUSE OS
