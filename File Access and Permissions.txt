@@ -29,5 +29,24 @@ sudo chown name:namegroup <objectname>
 * When compress file, use "tar" command to keep permission into tar also
 Otherwise, after un-tar we will lose permission setting
 
+* Access Control List -ACL
+To turn on F-ACL we use command : ??
+/etc/fstab  > file system table
+getfacl <filename> > show all information about file permission
+we also use getfacl to check whether system had already be enable F-ACL in file system
+if run getfacl and return nothing => F-ACL was not enabled
+
+To add more user or group to have permission on filename
+setfacl -m g:username:accessright filename
+example: setfacl -m g:Marketing:rw file.txt
+
+To add more user or group to have permission on a directory
+setfacl -m d:g:Marketing:rw foldername
+
+Sticky Bit (t): to indicate a shared directory
+
+
+
+
 
 
