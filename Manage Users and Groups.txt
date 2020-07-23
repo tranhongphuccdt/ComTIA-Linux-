@@ -1,0 +1,16 @@
+User management
+
+Add user: useradd <username>
+Remove user: userdel <username>
+Modify user infor: usermod
+create password: passwd
+
+Create group: groupadd <groupnane>
+Remove group: groupdel <groupnae>
+Add user to group: gpasswd -a <username> <groupname>
+Add user as group admin: gpasswd -A <username> <groupname>
+Remove user out of group: gpasswd -d <username> <groupname>
+check user info: id username
+
+Change user session: su username
+Change to super user do : sudo
