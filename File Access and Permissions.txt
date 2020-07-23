@@ -44,7 +44,7 @@ To add more user or group to have permission on a directory
 setfacl -m d:g:Marketing:rw foldername
 
 Sticky Bit (t): to indicate a shared directory
-
+chmod o+t foldername
 
 
 
