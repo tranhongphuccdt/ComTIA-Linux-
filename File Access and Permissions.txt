@@ -1,1 +1,33 @@
-init
+File permission:
+NOtation:
+d rwx r-x r-x DirA
+d: type of object {-:file,d:directory}
+rwx: owner permission
+r-x: group permission
+r-x: other permission
+r:read
+w:write
+x:execute, directory need to be executable to navigate to inside
+
+Change permission
+chmod ugo <objname>
+chmod g+r <objname>
+chmod o-r <objname>
+chmod g+r,o-r <objname>
+
+chmod +x <objname>
+chmod 777 <objname>
+
+u:user
+g:group
+o:others
+
+Default permission:
+Change file's group and owner:
+sudo chown name:namegroup <objectname>
+
+* When compress file, use "tar" command to keep permission into tar also
+Otherwise, after un-tar we will lose permission setting
+
+
+
