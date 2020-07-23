@@ -10,6 +10,8 @@ Remove group: groupdel <groupnae>
 Add user to group: gpasswd -a <username> <groupname>
 Add user as group admin: gpasswd -A <username> <groupname>
 Remove user out of group: gpasswd -d <username> <groupname>
+Change group for user: grpchg <groupname>
+
 check user info: id username
 
 Change user session: su username
