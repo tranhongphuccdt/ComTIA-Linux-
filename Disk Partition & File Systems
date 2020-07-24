@@ -1,1 +1,23 @@
-Init
+To check current partition in system use command: lsblk
+To create new partition in system use command: fdisk /dev/sdx
++ Type w: to exit
++ Type n: to create new partition
+
+We could not use partition until we put file system on there
+ext3, ext4
+xfs
+zfs
+fat32
+
+Commercial: xfs and ext4
+
+To use partition, we need following steps:
+1. fdisk
+2. mkfs.ext4
+3. Decide where to mount partition on
+4. Create folder mkdir
+5. mount
+6. Verify by mount command
+
+
+
