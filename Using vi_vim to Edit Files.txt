@@ -1,1 +1,30 @@
-Init
+
+i to Insert Mode
+esc to Command Mode
+:w to save
+dd delete current line in Command Mode
+:d to delete line in Execute Mode
+
+delete range from line 2 to line 3
+example: :2,3d
+
+to move to line 10
+:10
+
+Search forward /ThingToSearch
+Search backward ?ThingToSearch
+Replace /ThingtobeReplace/ThingReplace
+
+Copy and paste
+
+yy: copy current line
+p : past 
+
+:1,10y : copy line 1 to line 10 to RAM
+A to insert after
+
+save and save with different name
+:w
+:w <new name >
+
+Sublime is a UI editor but i could add command of Vi
