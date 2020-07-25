@@ -1,1 +1,64 @@
-Init
+Logical Volume Management:
+
+Logical Volume
+Group Volume
+Physical Volume
+
+Physical Volume created from SDx
+Group and Logical Volume could be added more capacity later.
+
+sudo pvcreate
+sudo gvcreate
+sudo lvcreate
+sudo gvextend > to add physical volume to group
+sudo lvresize > to add more capacity to logical volume
+
+to check information: lvs,pvs,gvs
+
+After resize logical volume, system still could NOT recognize the change,
+we need to run resize2fs command
+Run df -h to check system disk status
+
+To not format disk as logical volume:
+we do as below order ( backward order compared to create procedure )
+. umount lv
+. lvremove
+. gvremove
+. pvremove
+
+Filesystem Hierarchy:
+Could be search in : www.pathname.com/fhs
+
+
+/etc/ system configuration
+/dev/ device
+/boot/ boot file
+/mnt/ mount point
+/opt/ application add-on
+/root/ home directory
+/sbin/ system binaries
+/tmp/ temp files
+/lib/ shared library and kernel modules
+/proc/ running process
+/var/ various : log file of all applications, system, ID
+
+
+WHere could we install applications:
+
+/bin/
+/usr/bin/
+/sbin/
+/usr/sbin/
+/opt/ ( default )
+
+command ps aux to see all running process in present OS
+
+use command which <thing to search>
+use command whereis <thing to search>  ---> it lists all places where <thing to search> location
+example: whereis ssh
+ans: /usr/bin.ssh   : where executable bin file storing
+     /etc/ssh   : where configuration for ssh storing
+     /usr/share/man/man1/ssh.1.gz : where manual storing
+     
+/END
+
