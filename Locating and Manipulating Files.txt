@@ -1,1 +1,30 @@
-Init
+To view content of directory: ls
+ls -l : Long list
+ls -la: Long list with All contents including hidden files
+ls -lah: Long list with All contents including hidden files and show data length in Humand-readable way
+
+To view content of a file: use file cat
+command more: to view page by page ( space for move next page )
+command less: to view page by page ( space for move forward, PgUp to move previous page )
+command head: to show top of file
+command tail: to show bottom of file
+example : cat aux.txt
+          more aux.txt
+          less aux.txt
+          head -n 20 aux.txt
+          tail -n 20 aux.txt
+
+
+to make file: touch
+to make folder: mkdir
+to delete file : rm
+to delete directory: rmdir
+to delete recursive directory: rm -rf <directory> // force delete recursively
+
+whereis <command to search> to seach location of system known commands
+use find command to search user file
+or use command location to search file which registered to a database
+The pros of find command compared to location command is find command could search for up-to-date information
+but if use location command, it only searchs information that storing to database at the past.
+
+prep command could be used also, grep also searchs for content of file
