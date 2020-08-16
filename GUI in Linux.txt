@@ -1,0 +1,11 @@
+GUI in Linux:
+
+xfree86.org
+
+X.org
+
+GNOME2 ( MATE )
+GNOME3
+Wayland
+
+KDE
